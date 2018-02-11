@@ -1,0 +1,27 @@
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Debug\AVrBoT 4.0.pdb
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Debug\InTheHand.Net.Personal.dll
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Debug\InTheHand.Net.Personal.xml
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.AVrBoT_4.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.bienvenue.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.BlueTouth.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.choix_de_port.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.Flasher.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.MyTCP.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.MyWifi.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.Properties.Resources.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.Propriétés_de_port.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.csproj.GenerateResource.Cache
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.pdb
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.csprojResolveAssemblyReference.cache
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.SplashScreen.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\Interop.tom.dll
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.csproj.ResolveComReference.cache
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT_v4.projet.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Debug\AVrBoT 4.0.exe.config
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Debug\AVrBoT 4.0.exe.manifest
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Debug\AVrBoT 4.0.application
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Debug\AVrBoT 4.0.exe
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.TrustInfo.xml
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.exe.manifest
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.application
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Debug\AVrBoT 4.0.exe

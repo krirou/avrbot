@@ -1,0 +1,17 @@
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT_v4.AVrBoT_4.resources
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT_v4.choix_de_port.resources
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT_v4.Flasher.resources
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT_v4.Properties.Resources.resources
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT_v4.Propriétés_de_port.resources
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Release\AVrBoT 4.0.exe.config
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Release\AVrBoT 4.0.exe
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Release\AVrBoT 4.0.pdb
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT 4.0.exe
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT 4.0.pdb
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT_v4.accueil.resources
+C:\Users\jilali\Desktop\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT_v4.bienvenue.resources
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\bin\Release\AVrBoT 4.0.exe.config
+D:\avrbot4.0\AVrBoT 4.0\AVrBoT 4.0\obj\x86\Release\AVrBoT 4.0.exe

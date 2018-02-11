@@ -1,0 +1,37 @@
+
+/*Copyright (c) 2014 krirou jilali*/
+
+/*tous droits reserves */
+
+/*programme demo pour clignoter des leds connecter au port B */
+
+/*ecrire pour les avr chip */
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main ( void )
+
+{
+	            
+//programme clignotement d'un Led connecter au port b
+
+
+DDRB=0xff;
+
+
+while (1)
+
+{
+	
+PORTB=0xff;                 //mettre le port b a 1
+ 
+_delay_ms(2000);            //attend 2s
+
+PORTB=0x00;                 //mettre le port b a 0
+
+_delay_ms(2000);            // attend 2s
+
+}
+
+}

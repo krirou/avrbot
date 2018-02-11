@@ -1,0 +1,335 @@
+/*******************Copyright (c) 2014 krirou jilali***********************/
+
+/**************************tous droits reserves***************************/
+
+/*programme demo pour controler et commander un ascenseur */
+
+/*le programme basé sur les timer et les interruptions pour generees des signaux */
+
+/************************ programmation avancee ****************************************/
+
+# define F_CPU 1000000UL
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#define capteur1 PA0
+#define capteur2 PA1                           //capteur detecteur de la position de la cabine 
+#define capteur3 PA2
+#define capteur4 PA3
+#define bouton_haut1 PA4
+#define bouton_haut2 PA5
+#define bouton_bas2 PA6                   //bouton pour choisir le sens de destination d'ascenseur
+#define bouton_haut3 PA7
+#define bouton_bas3 PB0
+#define bouton_bas4 PB1
+#define demande_etage1 PB2
+#define demande_etage2 PB3
+#define demande_etage3 PB4                 //l'utilisateur choisi l'etage de destination
+#define demande_etage4 PB5
+
+                 						 						 
+
+char etat_cabine;
+int meme =0x00;
+
+
+void step_1(void)                 //etat 1 du moteur
+{
+	PORTC=0b00000011;
+}
+
+
+void step_2(void)                  //etat 2 du moteur
+{
+	PORTC=0b00000110;
+}
+
+
+void step_3(void)                 //etat 3 du moteur
+{
+	PORTC=0b00001100;
+}
+
+
+void step_4(void)                 //etat 4 du moteur
+{
+	PORTC=0b00001001;
+}
+
+
+void step_for(void)                 //fonction de rotation au sens direct
+{
+     	step_2();
+		
+     _delay_ms(250);
+	
+		step_3();
+		_delay_ms(250);
+	
+		step_4();
+		_delay_ms(250);
+	
+		step_1();
+		_delay_ms(250);
+	
+}
+
+void step_bac(void)                     //fonction de rotation au sens indirect
+{
+
+         step_4();
+		_delay_ms(250);
+	
+		step_1();
+		_delay_ms(250);
+	
+		step_2();
+		_delay_ms(250);
+	
+		step_3();
+		_delay_ms(250);
+	
+	
+}
+char etage_cabine(void)
+{
+	if(bit_is_set(PINA,capteur1))
+	etat_cabine=1;
+	else if(bit_is_set(PINA,capteur2))
+	etat_cabine=2;                                           //detection ou se trouve la cabine
+	else if(bit_is_set(PINA,capteur3))
+	etat_cabine=3;
+	else if(bit_is_set(PINA,capteur4))
+	etat_cabine=4;
+	return etat_cabine;	
+}
+void position_client(void)
+{
+	etat_cabine=etage_cabine();
+         if(bit_is_set(PINA,bouton_haut1))             //demande  de l'ascenseur par client
+            {do 
+               {
+	             step_bac();
+                } while (etat_cabine=1);
+                 PORTC=0b00001111;
+                 _delay_ms(2000);
+            } 
+        else if((bit_is_set(PINA,bouton_haut2))|(bit_is_set(PINA,bouton_bas2)))
+            {do
+              {if (etat_cabine=1)
+                step_for();
+                 else
+                   step_bac();
+              } while (etat_cabine=2);
+               PORTC=0b00001111;
+               _delay_ms(2000);
+             }
+        else if((bit_is_set(PINA,bouton_haut3))|(bit_is_set(PINA,bouton_bas3)))
+            {do
+	          {if (etat_cabine=4)
+		        step_bac();
+		          else
+		          step_for();
+	        } while (etat_cabine=3);
+	         PORTC=0b00001111;
+	         _delay_ms(2000);
+            }	  
+       else if(bit_is_set(PINA,bouton_bas4))
+         {do
+	       { step_for();
+	       } while (etat_cabine=4);
+	        PORTC=0b00001111;
+	       _delay_ms(2000);
+          }
+}
+void rotat_step(void)                    //choix de l'etage de destination
+{
+	etat_cabine=etage_cabine();
+	switch (etat_cabine)
+	{
+	   case 1:if ((etat_cabine=1)&& (bit_is_set(PINB,meme)))
+	     {
+		   if (meme=demande_etage1)
+		     {
+			  PORTC=0b00001111;              //blocage de moteur arret
+			  _delay_ms(2000);
+		      }
+		   else if (meme=demande_etage2)
+		     {do 
+		       {
+			     step_for();
+		       } while (etat_cabine=2);
+		       PORTC=0b00001111;
+			   _delay_ms(2000);
+		      }
+	       else if (meme=demande_etage3)
+	          {do
+		         {
+			       step_for();
+		      } while (etat_cabine=3);
+		        PORTC=0b00001111;
+		        _delay_ms(2000);
+	        }
+	     else if (meme=demande_etage4)
+	        {do
+		      {
+			   step_for();
+		       } while (etat_cabine=4);
+		        PORTC=0b00001111;
+		       _delay_ms(2000);
+	       }
+		              
+	} 
+	
+		break;
+ 
+	case 2:if ((etat_cabine=2)&& (bit_is_set(PINB,meme)))
+	{
+		if (meme=demande_etage2)
+		{
+			PORTC=0b00001111;              //blocage de moteur arret
+			_delay_ms(2000);
+		}
+		else if (meme=demande_etage1)
+		{do
+			{
+				step_bac();
+			} while (etat_cabine=1);
+			PORTC=0b00001111;
+			_delay_ms(2000);
+		}
+		else if (meme=demande_etage3)
+		{do
+			{
+				step_for();
+			} while (etat_cabine=3);
+			PORTC=0b00001111;
+			_delay_ms(2000);
+		}
+		else if (meme=demande_etage4)
+		{do
+			{
+				step_for();
+			} while (etat_cabine=4);
+			PORTC=0b00001111;
+			_delay_ms(2000);
+		}
+		
+	}
+	
+	break;
+
+     case 3:if ((etat_cabine=2)&& (bit_is_set(PINB,meme)))
+{
+	if (meme=demande_etage3)
+	{
+		PORTC=0b00001111;              //blocage de moteur arret
+		_delay_ms(2000);
+	}
+	else if (meme=demande_etage2)
+	{do
+		{
+			step_bac();
+		} while (etat_cabine=2);
+		PORTC=0b00001111;
+		_delay_ms(2000);
+	}
+	else if (meme=demande_etage1)
+	{do
+		{
+			step_bac();
+		} while (etat_cabine=1);
+		PORTC=0b00001111;
+		_delay_ms(2000);
+	}
+	else if (meme=demande_etage4)
+	{do
+		{
+			step_for();
+		} while (etat_cabine=4);
+		PORTC=0b00001111;
+		_delay_ms(2000);
+	}
+	
+  }
+
+ break;
+
+ case 4:if ((etat_cabine=2)&& (bit_is_set(PINB,meme)))
+{
+	if (meme=demande_etage4)
+	{
+		PORTC=0b00001111;              //blocage de moteur arret
+		_delay_ms(2000);
+	}
+	else if (meme=demande_etage3)
+	{do
+		{
+			step_bac();
+		} while (etat_cabine=3);
+		PORTC=0b00001111;
+		_delay_ms(2000);
+	}
+	else if (meme=demande_etage2)
+	{do
+		{
+			step_bac();
+		} while (etat_cabine=2);
+		PORTC=0b00001111;
+		_delay_ms(2000);
+	}
+	else if (meme=demande_etage1)
+	{do
+		{
+			step_bac();
+		} while (etat_cabine=1);
+		PORTC=0b00001111;
+		_delay_ms(2000);
+	}
+	
+}
+
+break;
+
+   default:if ((etat_cabine>1)&&(meme==0x00))
+    {do 
+      {
+	    step_bac();
+       } while (etat_cabine=1);
+	   PORTC=0x00;
+   }
+}
+}
+void config_interface(void)
+
+{
+	
+	DDRC= 0b00001111;                     //declaration de port c comme sortie
+	
+	DDRA&=~(1u<<capteur1);
+	DDRA&=~(1u<<capteur1);
+	DDRA&=~(1u<<capteur3);
+	DDRA&=~(1u<<capteur4);
+	DDRA&=~(1u<<bouton_haut1);
+	DDRA&=~(1u<<bouton_haut2);
+	DDRA&=~(1u<<bouton_bas2);
+	DDRA&=~(1u<<bouton_haut3);
+	DDRB&=~(1u<<bouton_bas3);
+	DDRB&=~(1u<<bouton_bas4);
+	DDRB&=~(1u<<demande_etage1);
+	DDRB&=~(1u<<demande_etage2);
+	DDRB&=~(1u<<demande_etage3);
+	DDRB&=~(1u<<demande_etage4);
+}
+int main(void)
+{
+	config_interface();            
+	sei();                              //activé tous les interuption
+	while(1)
+	{
+	 rotat_step();	
+	 position_client();
+	 
+	}
+}
+	

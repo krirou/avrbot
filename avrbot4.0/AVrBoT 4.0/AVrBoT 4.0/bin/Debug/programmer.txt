@@ -1,0 +1,10 @@
+avrisp2, AVrBoT
+stk500v1, AVrBoT ISP
+avrisp2, Prog S
+arduino -b 19200, Arduino
+stk500v1, Arduino ISP
+avrisp, AVR ISP (STK500v1)
+avrisp2, AVR ISP 2 (STK500v2)
+buspirate, Bus Pirate
+usbasp, USB ASP
+usbtiny, USB Tiny

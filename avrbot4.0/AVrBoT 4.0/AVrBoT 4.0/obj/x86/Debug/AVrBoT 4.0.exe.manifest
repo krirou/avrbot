@@ -1,0 +1,2407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AVrBoT 4.0.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="favicon (1).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AVrBoT 4.0" version="4.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="AVrBoT 4.0.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Options du manifeste de contrôle de compte d'utilisateur
+             Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le nœud 
+             requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            La spécification du nœud requestedExecutionLevel désactivera la virtualisation de fichiers et du Registre.
+            Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la compatibilité 
+            descendante, supprimez le noeud requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AVrBoT 4.0.exe" size="2628608">
+      <assemblyIdentity name="AVrBoT 4.0" version="4.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>06zPNdM/CXxaEQv6odTR+lzYesc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InTheHand.Net.Personal.dll" size="431616">
+      <assemblyIdentity name="InTheHand.Net.Personal" version="3.5.605.0" publicKeyToken="EA38CAA273134499" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>d0GsnFr3Pk0TW5+uBgMXhOTs5JU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AVrBoT 4.0.exe.config" size="2448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9Rk0WG54FRmnmON20/nkf1E0YmY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="AVrBoT.ico.ico" size="117708">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7qGgc/INNAhlHjWu6h8P3dAuZ6U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\avrdude.exe" size="313344">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZxcGQdnx940bdEXZxTrm48ZqRjw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\chip.txt" size="1681">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rlCgNDj8J4Sg2E2y4qCLSiSziVg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\exemple_clignotement_led.txt" size="556">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>j56E2kMJ+QL21sMVuQDH3X819VI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\exemple_commande_bras_robotique.txt" size="7189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CGLzdjaljRGKGQxfSmsWbG1pZp8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\exemple_commande_moteur_pap_vitesse.txt" size="7441">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5dJZ4cfD7PMLnQBs5q+HbrRk/Hw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\exemple_prog_ascenseur.txt" size="7069">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mo6zH1v6FteUWL3BnyJxSMIDgEc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\libusb0.dll" size="43520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gg9bxhVF1es4yXPLiHjr1MF0Otw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\programmer.txt" size="222">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dfU1OHvbawyy1eq90bw5IGZcKlc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\avrbot_driver.inf" size="2808">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sXih4LByZlXzyCEaow6q26EHT+I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\dpinst-amd64.exe" size="1047632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wLhsTW8eBbhCVzCBvMd1T8vK9bs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\dpinst-x86.exe" size="922176">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WTd1OQuKR0oL24pJtdJrULbjys4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\amd64\ftbusui.dll" size="108936">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sc630jxcWK4RUHvuyCIoKUoDzYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\amd64\ftcserco.dll" size="65416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xcTbLe9opdrOW3FWHRHcTDiZXrg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\amd64\ftd2xx64.dll" size="237960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dx28rQynfFLEorigLUeBeJCmk8c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\amd64\ftlang.dll" size="214920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SZNHAA4jFmrm2BzuoW5+s0SP8RY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\amd64\ftserui2.dll" size="55176">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>a4mJxoKFiU7LTi981yZsDE0IDTA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\ftdibus.inf" size="5324">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Z5rF+00QeIAEXAFDkr8elZLF4Xs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\ftdiport.inf" size="5218">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+ZkkuYvkXw7kcrcOlrFc7wA+g9s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\i386\ftbusui.dll" size="105352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>J+np1W7Db9d91SH0eOwkdYnm0Ig=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\i386\ftcserco.dll" size="69000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cANvR8lrHc+Ek8/oq1zn37t6bkk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\i386\ftd2xx.dll" size="203144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JmkZ8mqeQeOV+ZcN7MZwm0fdhfA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\i386\ftlang.dll" size="201096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SHjAu/SiqDK8l1j8ueecTexGmis=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\FTDI USB Drivers\i386\ftserui2.dll" size="52616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>p76I4LOxC+oiu47V0/7dMb8qwM4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\ar.exe" size="618496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xXriHuFzTeGg7uDkYi4jvoDbmck=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\as.exe" size="794112">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w1KYD/5qJrerxwTsGv9xQ+rJyTA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\c++.exe" size="235520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FNqvjEGIr0DaEJhxbEnGUS/SuA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\g++.exe" size="235520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FNqvjEGIr0DaEJhxbEnGUS/SuA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\gcc.exe" size="230912">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5YHLAwquIBSnVZnDSgYFL6TKYWk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\ld.exe" size="1038336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8bEpl19HJkpYE7tfmZ4asPyR5iY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\nm.exe" size="609280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>50ISY8nuaWViB+UhIwWxKVoFRd4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\objcopy.exe" size="801280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rbeLgziwTh+t8FCIHOWeSxp1H8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\objdump.exe" size="869888">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sU102QkWghQxyiFQo2zLB4sSFmI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\ranlib.exe" size="618496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>x8L8d3+isZ0fJoTGx8P7iBZ73yY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr\bin\strip.exe" size="801280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3Bor002rKrtXvLB/sxzirHYPRxk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\ar.exe" size="563200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hP5zr95xRlOwyepwUqk1KyGfw2s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\as.exe" size="865792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tdVp2HACNKgDSoThx6XLwSVfQ4w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\c++.exe" size="217088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2hzY/eyl+J+ChqSAGNHjHiBxdEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\g++.exe" size="217088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2hzY/eyl+J+ChqSAGNHjHiBxdEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\gcc.exe" size="212992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>S0kdcxcj5ABCUlopiJdOZW85exs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\ld.exe" size="1316864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kuvM4UBKo+CuFVAuUD/KbcHUx0Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\nm.exe" size="553984">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0T26oVd1Oxbp0fPTAYBgmb2bqp0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\objcopy.exe" size="724992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>x3N8Ia+TVBvxj/h+JrYdCtubigU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\objdump.exe" size="896512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RfuCCnOm3cRhri2C6QYv2aZtHvE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\ranlib.exe" size="563712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YR2ukLPhyDSVRf5v40fobyWETlI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\avr32\bin\strip.exe" size="724992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9nomEiuFkPOErWc4R+c7QAl0mHA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avarice.exe" size="1642496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>etr5IyBy9Ugw3L4EUVYduFZ3kPo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-addr2line.exe" size="543232">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>m/c649CpuDw/TW1ibDnEqaOgC8w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-ar.exe" size="563200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hP5zr95xRlOwyepwUqk1KyGfw2s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-as.exe" size="865792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tdVp2HACNKgDSoThx6XLwSVfQ4w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-c++.exe" size="217088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ectyVLfYSrwKzWrKCPaoZiFcHpg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-c++filt.exe" size="541696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XHOMSZdQxtbLkovfD59xxTKyClE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-cpp.exe" size="215552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+aPB5bKY+/KQh1PY/PI20+FbHr4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-g++.exe" size="217088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ectyVLfYSrwKzWrKCPaoZiFcHpg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-gcc.exe" size="212992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Yv0HAQzt6sQehZ2f2/zWzQc5wgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-gcc-4.3.2.exe" size="212992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Yv0HAQzt6sQehZ2f2/zWzQc5wgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-gcov.exe" size="30720">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/Ymyr6N0gzYrDdokODj5knPAWz4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-gdb.exe" size="2752000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>K19YR1rN1S/yC5jagk1gZHqiY3k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-gprof.exe" size="608768">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>M0FHxU6lVKbnGr0ObbBaAmwV9sA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-insight.exe" size="2752000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Nub8MnESFy5qHjwDmvFyJmKRDV8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-ld.exe" size="1316864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kuvM4UBKo+CuFVAuUD/KbcHUx0Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-nm.exe" size="553984">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0T26oVd1Oxbp0fPTAYBgmb2bqp0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-objcopy.exe" size="724992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>x3N8Ia+TVBvxj/h+JrYdCtubigU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-objdump.exe" size="896512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RfuCCnOm3cRhri2C6QYv2aZtHvE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-ranlib.exe" size="563712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YR2ukLPhyDSVRf5v40fobyWETlI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-readelf.exe" size="311296">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VwjPyyajq0KmowVhYHaNBhXzNi8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-size.exe" size="545280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>G2VMf+i/VTCYY6He8bkrxKPeCpM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-strings.exe" size="544256">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>knOpOed3tu9AFfgjERdOGHDORCc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr32-strip.exe" size="724992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9nomEiuFkPOErWc4R+c7QAl0mHA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-addr2line.exe" size="598016">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LWffA21Z0HdyM3byMx1HYQf6TiU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-ar.exe" size="618496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xXriHuFzTeGg7uDkYi4jvoDbmck=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-as.exe" size="794112">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w1KYD/5qJrerxwTsGv9xQ+rJyTA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-c++.exe" size="235520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ohcfO/+lWiNIJVREfEn50gtT0T4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-c++filt.exe" size="597504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8AgPYrdl7ofve/m9jyA9rUjyNt4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-cpp.exe" size="233472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rbGPNdLeKTmPYWVsC1o99MXptBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avrdude.exe" size="313344">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZxcGQdnx940bdEXZxTrm48ZqRjw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-g++.exe" size="235520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ohcfO/+lWiNIJVREfEn50gtT0T4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-gcc.exe" size="230912">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ke1rNpFXgtbLBr37rHHtkzrj5cc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-gcc-4.3.3.exe" size="230912">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ke1rNpFXgtbLBr37rHHtkzrj5cc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-gcov.exe" size="30720">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wz+xtIxU8/WrAg+4lA2TJvgtfB0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-gdb.exe" size="2742272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YHTPpR9Kf/cCFXfD4fMRyi5IKog=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-gprof.exe" size="663552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VyfTkmoXAbK5+sQRs3gpbp1Iooc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-insight.exe" size="2742272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>S5Gtb58kfMr7NBd5P/nap8qtIHA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-ld.exe" size="1038336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8bEpl19HJkpYE7tfmZ4asPyR5iY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-nm.exe" size="609280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>50ISY8nuaWViB+UhIwWxKVoFRd4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-objcopy.exe" size="801280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rbeLgziwTh+t8FCIHOWeSxp1H8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-objdump.exe" size="869888">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sU102QkWghQxyiFQo2zLB4sSFmI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-ranlib.exe" size="618496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>x8L8d3+isZ0fJoTGx8P7iBZ73yY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-readelf.exe" size="309760">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oRAMpiUNDMHmkg6vUaEGV3aanQQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-size.exe" size="605696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YTfGljq+u5SiSRISZXOYFI1MiBI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-strings.exe" size="599552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4QNOQ2CCwFW5j5Gf/OFhCrhUbIg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\avr-strip.exe" size="801280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3Bor002rKrtXvLB/sxzirHYPRxk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\cygwin1.dll" size="1872884">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SJqMp8eFEIit5YxATd3hqSZVkAM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\itcl32.dll" size="138707">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4OcRUOo+k4dW6ql1ysyrQJ+2+I8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\itk32.dll" size="62224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ahPLQx3xEdlpXkuwOBiwGoZHgBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\libusb0.dll" size="43520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gg9bxhVF1es4yXPLiHjr1MF0Otw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\loaddrv.exe" size="11264">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BYhLI8zU9II8pR10rlRFmzHKgWg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\simulavr.exe" size="2359296">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>loTBbX9ihCz9X6WWWAWua8BcqOU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\splint.exe" size="1571328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lC0a1yKyQePpDh08B1TmA2NKUv4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\srec_cat.exe" size="704000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9/RtSYskYyfypBVyAaeNKG4+gzg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\srec_cmp.exe" size="540160">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iTvKEJAECKdVrwOOEvZc+Ipajug=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\srec_info.exe" size="540672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KcevWTyod/gk6AM1XWyau5DRLrc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\tcl84.dll" size="890792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>i+02ZqfOVh31oNvxluV8Py5ivoU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\tclpip84.dll" size="20929">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TGF3Muq0uS2O5gVf+KOdqAxKpOU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\tclsh84.exe" size="12288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zKVMpmTgjBZ2qTLe81z2fud9do0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\tk84.dll" size="1222874">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1KbM7FZ+61z5xt0dDu72lq9vN+Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\bin\wish84.exe" size="13312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>13zP7vFP5tiPhNGGWHuxbiCeIXc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\lib\dde1.2\tcldde12.dll" size="32555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Itd69hZA8XKvK+0asw3WOwXB+Jw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\lib\reg1.1\tclreg11.dll" size="33689">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yUlQllW9NpXpyrZfwpFRMm7VPp0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr\4.3.3\cc1.exe" size="5597696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4Ejn0hWs3txSMIEzKaXF/c4fdNc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr\4.3.3\cc1obj.exe" size="5671424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uoddf8QEWpT+EP4iTnUtWNOVCwA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr\4.3.3\cc1plus.exe" size="6297088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Kflkoc5+3iEWsfxJgsIcwKyUFkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr\4.3.3\collect2.exe" size="112640">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/KVAh2Iqt39k5RLaXo+74tdaBoI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr\4.3.3\install-tools\fix-header.exe" size="205312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nl+LH6wWjJ2ETooEESYa2FGS7Gk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr\4.3.3\install-tools\fixincl.exe" size="118272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JCSlyCrvvRQWX5wVWvT+aDaLmkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr32\4.3.2\cc1.exe" size="6297088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8+V213qZiPZgEulxbL5I7VSUvig=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr32\4.3.2\cc1plus.exe" size="6996480">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QLqzCkJrm2FLXYQa9X4ilXXky28=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr32\4.3.2\collect2.exe" size="113152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6j/gGa3lOK9Cq3Qvt88+0nGlUrs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\libexec\gcc\avr32\4.3.2\install-tools\fixincl.exe" size="118272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ismSH8o4AQbWDPkPRFNxmPoR6Gs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\ansi2knr.exe" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>B8pvHo/mAqrt6/byrH/97xStO1w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\basename.exe" size="18432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>l0IS62ki8mo18s9XkB0frJy5fTM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\bc.exe" size="52736">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>I0iHAboWtXGmozWmEk3QaRZI2Kw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\bison.exe" size="109568">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IYn4emPJ/mbhNb/RzOtqrXOurX8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\bunzip2.exe" size="67072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MeflqhdHCeIop9NJFwFOAY51ap8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\bzcat.exe" size="67072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MeflqhdHCeIop9NJFwFOAY51ap8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\bzip2.exe" size="67072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MeflqhdHCeIop9NJFwFOAY51ap8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\cat.exe" size="22528">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>A/r5uPswsM3nvJNYLcipVKTiD2c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\chgrp.exe" size="23552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AdaaXzywbon6Z/wfbb5+nZKOkfk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\chmod.exe" size="28160">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FuLTkycdcgvsXXLovq/mYR8HoY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\chown.exe" size="23040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iOSRUjp7VAuHiksDnpq7SK1XcUg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\cksum.exe" size="19968">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tGxsE478c4kPaj8H/c/R9zCCoHM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\cmp.exe" size="11264">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>C87Z0pfqCRc+n4hKOeObACcnPkk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\comm.exe" size="21504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jdlSmYqroYF1qe5fuFBn0ORkIcU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\compress.exe" size="13312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Cq2jJgbdp9TDPQNEj7BsGVJYrY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\cp.exe" size="74240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GlO5rWWHCrJ2Z5cljA6qsprZkyM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\csplit.exe" size="65024">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FuB8xsZaRdWngTePyjHi26jOvYs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\cut.exe" size="24064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w3Ad6BLGVhQM1yt20tGmHgfkRXM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\date.exe" size="47616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zYZrhxdPYXdsskiWuPimGzOqwlg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\dc.exe" size="25600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rn2NpAqpV0kHmAknMRA2FBDdfPY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\dd.exe" size="32256">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>g6bIOSp5pgNS4UJxYcj3nUvCdh0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\df.exe" size="25600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tFqriEYGVfFdG876lO6x62NcpFg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\diff.exe" size="68608">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/nzQjec5lrWWcWN/0liilKY1pIw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\diff3.exe" size="17920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>X5iMo3WPxCiKN7Ry96V1ZAEN4NU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\dircolors.exe" size="27648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uWdo2la9eA/z49Wnx3uaJrjDces=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\dirname.exe" size="17920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LJmxUNsXRUYL8x7Z08PH0g3qoiU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\du.exe" size="25600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZvYmHhaFmdCCwrRh3D54tD/H/o4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\echo.exe" size="7680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ly0r0rIys2oZ9S5sOrQWOiDthHQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\egrep.exe" size="82944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/5+gRypJ9padXGWb8zRenCOkBuE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\env.exe" size="18944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4v1UMWiPJNstkCqC41wCCFEQOBQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\expand.exe" size="20992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>46Tj1jYsmsT9UVPKgQ47660oXZg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\expr.exe" size="49152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XhLR2WZDcTGwjWm6oT8XgSO9QSI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\factor.exe" size="18432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lT6rgtD4nwtea/L2QdylwbuGU5A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\false.exe" size="12288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dLiAoH3s+XLF9FgxCp30OZ6Pe4U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\fgrep.exe" size="82944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9RRPldDnU0rDUU5dvTYcV/u7wN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\find.exe" size="52224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vgBjWAmnGxqcxPZnqKJD4GLWJj8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\flex.exe" size="165376">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6lN9W5/iuVI7WN2Gtot4tJkG2I4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\fmt.exe" size="24064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qCyjULCf9J4m0hGL3+V6FAAfJwI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\fold.exe" size="21504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8k9WSlIFkNiljO05VM29a6JoGT0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\fromdos.exe" size="53248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Od7sWySswTQB6oY+ubFlxN7L4oU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\fsplit.exe" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CGGzNRI70o1RSTiF2npoFBFroYw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\gawk.exe" size="149504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Yg30/c3Qs1z1QScUzeqcwexd978=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\gclip.exe" size="7680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TuuuDknS65UJk7R5vyq4e5RDflY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\gplay.exe" size="4608">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>N/j7riAbULpL9MV74PdqYeQmPR8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\grep.exe" size="81408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>67nQvzq+3P0VENkRMNI4hehtgZY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\gsar.exe" size="14848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4/WA9r8cg0SflDCOkeKOt6yWGs4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\gunzip.exe" size="49152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jMGT7SMwcQFNkfRPuTqwFg9CYts=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\gzip.exe" size="46592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uyhhwZuR98CNd/1QugsGTvmEf4k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\head.exe" size="26624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CeaGjlr6G0czcEEFClW5SmfcvEs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\id.exe" size="21504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3iqt4npWZpwKSOj19QdGBn+Qztg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\indent.exe" size="55296">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AUPQmosl1bb9FMzStFxiIbzTpqo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\info.exe" size="163840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Jboy3wmFzRvU9fREP1ZkA11GnuE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\infokey.exe" size="33280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Gj2tLlRu5SHoZkFDGHTbYE6hPXQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\install.exe" size="77824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yYXiJBLxk72hJE/Jv2aq9GRDKH0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\install-info.exe" size="41472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>O3txKphDcksl2gO9x/sGS1qQ1Ss=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\join.exe" size="27136">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>I88a+8053Ergw4NBOmjZx3suH+o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\jwhois.exe" size="49152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7+JReDgD/97sfWNbeChLscUAMFY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\less.exe" size="99328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3QmXXmUrmzNMtXS7uMUP80lUzT8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\ln.exe" size="72704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>u8GJyYgsu5lUJ5+NYNUMvUiYYrQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\logname.exe" size="7680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zPBvC62d7hHQ65l46PFDA0tob/s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\ls.exe" size="69632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TcQt8mb4wL3gj76JPP94xy1Dt2Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\m4.exe" size="81920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6WcTqoXqjaFJVOWcEG46MNUEdK0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\make.exe" size="166400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+yyejWCciDfJ/iAWQdP1D8tg7kE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\makeinfo.exe" size="180224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EDERFeGJ7Wj2indfBkvvFb0C9Zk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\makemsg.exe" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9kfZaH07ZPlfSriVmS/f9+aU1Ww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\man.exe" size="38400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OG5opNxurvNK0v0GmLMMIooodsI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\md5sum.exe" size="27648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QShHAHVITlY246N1LAx017XZK2w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\mkdir.exe" size="28672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MUkeVBbCCMYfhkCWIahpkDDASXg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\mkfifo.exe" size="13824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zPqD+G+SPnvy11mPxArYo5Bcfdo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\mknod.exe" size="20992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Fak33AOTDXV3SWUv0JramEuuCPE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\mount.exe" size="9728">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vBjJAm4O/yer+qGTD9jmpCV0VOM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\msys-1.0.dll" size="781616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>F6VG1XOjwn8CMvaulB8adreaRr8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\mv.exe" size="81408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8/QDO/r0ilY2RFn/0sP8qKzBXy4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\mvdir.exe" size="20480">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/YZo29FBd0Xtr7UFVJSCy2RQ/vE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\nl.exe" size="51712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ttFUaVhk8qZZGnM6DtNnlT8iX0E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\od.exe" size="36864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+JnRXI0MTYKT+Na3K+5VIGxA5z4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\paste.exe" size="20992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZbBhvPU21SVD5CR6C8Ss78xvLlQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\patch.exe" size="57344">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4V3/IEiUCL1YUOm0KJXu7oV5+JI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\pathchk.exe" size="10240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oEXWebaxOUe2WHji0VONmSbrU9s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\pclip.exe" size="7680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GL4aCvJ8TEjiygjzpOCCQizN0+k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\pr.exe" size="37376">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>X1cyzgRUAOic6QpA25ZjYRoBwxc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\printenv.exe" size="7168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VtJqGFoEKx0Y3LLgE3Q1WLK9sbA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\printf.exe" size="12800">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>J/qt0eP0/KEdbbMlv1lCaiz9pZA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\ps.exe" size="10752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GQEY842z/zy/Y2a0JYaQL7QhBZE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\pwd.exe" size="2048">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BfJNVt1F5JJ0YINLWvUdRrzz+7s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\rm.exe" size="62464">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/ir7tojfzDCVbUF+ruTcXCDdZaU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\rman.exe" size="136704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>q3uQD4gNvtqxbaq5F6hJx5BhqOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\rmdir.exe" size="22528">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zZu7WDbv27bDct9dmEVxBrizHKE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\sdiff.exe" size="19968">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>y7CekdT6KuX3hMe4me2Sup6xy1Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\sed.exe" size="48128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Vma50QSju/JZhZ2YP/aC625u36Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\seq.exe" size="18432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/BcXZ4Ci5r/vJI1k9YklQl76u/c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\sh.exe" size="476672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3bM9FAhGssdrplY/W0HQvCwGDb4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\shar.exe" size="34816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>USfmXn73UObe3QV/8ce8CuJiPbU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\sleep.exe" size="18432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HwF0W9RpVJ1+Bndy4k4+xhZmy/4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\sort.exe" size="39936">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YN584Q38ixdueT+6uqOPcfnyN1g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\split.exe" size="23552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YGBJAfMDO3yYsaTLGgk7XBW5fgU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\stego.exe" size="12800">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mVQ2Ztv3CR2aZgpeo8zx12lKoqo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\su.exe" size="12800">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>f3lZC0OHpUohxC56k+ODlXtSM+U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\sum.exe" size="19456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JYS2/0l/MQq5jD5MozEN/mZOvGo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\sync.exe" size="18944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mPU1LEvYHAW7KaNsOFmW3luvth0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\tac.exe" size="49664">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lPSVRPbLRoVBkVxIk2245h4BFLw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\tail.exe" size="35840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Lq6uJTj4P3TSnqCgv7I8PbrLhSI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\tar.exe" size="158208">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sxSCDE/TadeUqa85Z9qXwniyXzM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\tee.exe" size="19456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LuxZ0v7BWjfXoWVoar+JTSfdQF0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\test.exe" size="17408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5bLBDLnfcpDr/foOAq9emMvYpls=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\texindex.exe" size="29184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+DL48P0yXBb4EfScbZfYGxEF7uc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\todos.exe" size="53248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>amdxRzO0xv83EY4AXzHB60s4Gu0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\touch.exe" size="38400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5Bk1BxFFWHGMnLigsJ6hjZEzciE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\tr.exe" size="33280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Da42XMwKM+IVfotWEFu+m8VZ7O8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\true.exe" size="12288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oe8cz90DynHKkf/BqMVFxkokkCY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\type.exe" size="3072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UillMdfLeVpUbFDcsyHXGuZPoh4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\uname.exe" size="18944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YDnfyQb2fZurebTC/C5pNEo8MGc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\unexpand.exe" size="20992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>94tUkT5DY9BoyIF2pSQkpr6aUx8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\uniq.exe" size="24576">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>W8iFOy7vApPlM4fWAia3DdgX+kI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\unshar.exe" size="10752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XTT45Gs4Il3SrJTbb+17lXbDrBs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\uudecode.exe" size="9728">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FaxgGqwlOQjDwccTWAd1opC3Djo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\uuencode.exe" size="9216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SOhtZm6yRjnRlslp/Ib8efcvEaY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\wc.exe" size="32256">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ihwCLuTydVujy/Ad0uIEnEGaa44=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\wget.exe" size="133120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pcoeOjZGKCQ2zUDsXb7uBJL1l9g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\which.exe" size="12288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WYKaojFMyyE9b03DcDsM/au5wkI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\whoami.exe" size="7680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0ssYlopPxA5SpoczwcEHDseAvTk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\xargs.exe" size="35328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>elHIAXQv16wzs3h3fmNhfGK+24w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\yes.exe" size="6656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HCsLxJpO6Gc6H2etzI3XRWalrPg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\bin\zcat.exe" size="49152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IphyOhU6CRAHB/zJV7BnfFKPq5Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\avrisp2.inf" size="3391">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>64TYqJAlY+erw07QNZWnXBqn/J8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\inf-wizard.exe" size="29696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ki+496THBcu7A9yf2Gh2uN4c/8E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\install-filter.exe" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wX+fSt2tf6tY8kYxb/s+f3ByU4E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\jtagice2.inf" size="3403">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5291kz0c9glvGfAW0JkgXMOx+uM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\libusb0.dll" size="43520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gg9bxhVF1es4yXPLiHjr1MF0Otw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\libusb0_x64.dll" size="43008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PJLd0nEPGAwIVQ8euzRiIQIqNfU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\testlibusb.exe" size="8192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5481TVudsT5PdO8QR6LTG2TdO7M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\toolavrbot\utils\libusb\bin\testlibusb-win.exe" size="13824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6GZD7oRpn2wKe467cXqo60UEsgU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\utilavrbot\avrdude.exe" size="313344">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZxcGQdnx940bdEXZxTrm48ZqRjw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\utilavrbot\CoreDll.dll" size="394240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>aOFpSb1WPn9zvdxbb9PGImCehew=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\utilavrbot\cygiconv-2.dll" size="969728">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4RbDux1vhXF9DC8nD0Er0c//l0U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\utilavrbot\cygwin1.dll" size="1872821">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Te0Rz1Ix2g5+npgIEAZSYBxRY1s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\utilavrbot\libusb0.dll" size="43520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gg9bxhVF1es4yXPLiHjr1MF0Otw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\tools\utilavrbot\rxtxSerial.dll" size="109568">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1T9olpX3tRAH5g7USXP69gKmMfc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon (1).ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>B4h5nZXcl74cXvYleXmbKQNgZqI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Une liste de toutes les versions de Windows avec laquelle cette application peut fonctionner. Windows sélectionnera automatiquement l'environnement le plus compatible.-->
+      <!-- Si votre application est conçue pour fonctionner avec Windows 7, supprimez les commentaires du nœud supportedOS suivant-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+</asmv1:assembly>

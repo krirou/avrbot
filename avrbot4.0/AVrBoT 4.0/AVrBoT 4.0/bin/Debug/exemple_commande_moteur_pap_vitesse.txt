@@ -1,0 +1,403 @@
+/*******************Copyright (c) 2014 krirou jilali***********************/
+
+/**************************tous droits reserves***************************/
+
+/*programme demo pour commander un moteur pas a pas par ordinateur via usart de ATMEGA 16*/
+
+/*le programme basé sur les timer,adc  et les interruptions pour generees des signaux */
+
+/************************ programmation avancee ****************************************/
+
+#include<avr/io.h>
+#include<avr/interrupt.h>
+#include <inttypes.h>
+
+
+#define potentiometre PA0
+
+#define switch1 PA1
+#define switch2 PA2
+#define switch3 PA3
+
+#define T_MAX 10000 
+#define T_MIN  300
+#define T_DIFF 9700
+
+#define TS_rotat_teep 700
+#define T_INIT 3000
+char etat_step;
+char a=00;
+char b;
+char c;
+
+char step=50;
+char step_pre=0;
+
+uint16_t TSteep = T_INIT;
+
+
+
+
+
+
+//This function is used to initialize the USART
+//at a given UBRR value
+void USARTInit(uint16_t ubrr_value)
+{
+
+   //Set Baud rate
+
+   UBRRL = ubrr_value;
+   UBRRH = (ubrr_value>>8);
+
+   /*Set Frame Format
+
+
+   >> Asynchronous mode
+   >> No Parity
+   >> 1 StopBit
+
+   >> char size 8
+
+   */
+
+   UCSRC=(1<<URSEL)|(3<<UCSZ0);
+
+
+   //Enable The receiver and transmitter
+
+   UCSRB=(1<<RXEN)|(1<<TXEN);
+
+
+}
+
+
+//This function is used to read the available data
+//from USART. This function will wait untill data is
+//available.
+char USARTReadChar()
+{
+   //Wait untill a data is available
+
+   while(!(UCSRA & (1<<RXC)))
+   {
+      //Do nothing
+   }
+
+   //Now USART has got data from host
+   //and is available is buffer
+
+   return UDR;
+}
+
+
+//This fuction writes the given "data" to
+//the USART which then transmit it via TX line
+void USARTWriteChar(char data)
+{
+   //Wait untill the transmitter is ready
+
+   while(!(UCSRA & (1<<UDRE)))
+   {
+      //Do nothing
+   }
+
+   //Now write the data to USART buffer
+
+   UDR=data;
+}
+
+
+
+
+
+void USART_newline(void)
+{
+    USARTWriteChar('\r');
+		 USARTWriteChar('\n');
+
+  return;
+}
+
+void USARTWrite_S_Char(char *data)
+{
+   unsigned char c;
+
+   while(*data)
+   {
+      USARTWriteChar(*data++);
+   }
+   USART_newline();
+   return;
+   //Now write the data to USART buffer
+
+ 
+}
+
+
+
+void config_timer(void)
+    {
+	 TIMSK|=(1<<OCIE1B);          //choix de Timer B avec la valeur de comparaison
+	 TCCR1B|=(1<<CS11);           //choix de prescaler 
+}
+	
+void step_1(void)                 //etat 1 du moteur
+    {
+	 PORTB=0b00000001;
+	 etat_step=1;
+	}
+	
+
+void step_2(void)                  //etat 2 du moteur
+    {
+	 PORTB=0b00000010;
+	 etat_step=2;
+	}
+	
+
+void step_3(void)                 //etat 3 du moteur
+    {
+	 PORTB=0b00000100;
+	 etat_step=3;
+	}
+	
+	
+void step_4(void)                 //etat 4 du moteur
+    {
+	 PORTB=0b00001000;
+	 etat_step=4;
+	}
+	
+	//fonction de rotation au sens direct
+void step_for(void)
+    {
+	  if(etat_step==1)
+	   {
+	      step_2();
+		}
+	 else if(etat_step==2)
+	    { 
+		  step_3();
+		}
+      else if(etat_step==3)
+	    { 
+		  step_4();
+		}
+	 else if(etat_step==4)
+	    { 
+		  step_1();
+		}
+	}
+	
+	
+	//fonction de rotation au sens indirect, 
+void step_bac(void)                     
+    {
+	  if(etat_step==1)
+	   { 
+		  step_4();
+		}
+	 else if(etat_step==2)
+	    { 
+		  step_1();
+		}
+      else if(etat_step==3)
+	    {
+	      step_2();
+		}
+	 else if(etat_step==4)
+	    {
+		  step_3();
+		}
+	 
+	}
+	
+	
+
+ void rotat_step(void)
+ {
+ 
+	 if(bit_is_set(PINA,switch1))
+	     step_for();
+
+     else
+	     step_bac();
+		 }
+
+	
+	//fonction de demarage de la convertion de l'ADC
+void start_adc()                       
+    {
+	 ADCSRA|=(1u<<ADSC);               //lancée la convertion de ADC
+	}
+	
+	
+ISR(TIMER1_COMPB_vect)                    //intruption du timer
+    {
+	 if(bit_is_set(PINA,switch2))  
+	    {
+	     rotat_step();
+	     OCR1B=TSteep;               //La valeur de comparaison =(le temp entre des interuption/prescal)*(F_CPU)
+	     if(bit_is_set(PINA,switch3))
+            {
+			  start_adc();
+            }  
+		 }
+	 else
+	    {
+	     if(step)
+	       {
+	         rotat_step();
+    	     step--;
+	         OCR1B=TS_rotat_teep; 
+	        }
+	     else
+		    {
+	         if(bit_is_set(PINA,switch3))
+                {
+			     start_adc();
+                }  
+    		}
+	    }	 
+	 TCNT1=0;
+	 
+	}
+
+
+void config_adc(void)
+   {
+     ADMUX|=(1u<<REFS0);                   //Vref=Avcc
+     ADCSRA|=(1u<<ADEN);                   //set on adc 
+     ADCSRA|=(1<<ADPS1)|(1<<ADPS0);        //set prescaler To 8 car (1Mhz/8=125khz)
+     ADCSRA|=(1u<<ADIE);                   //set one intruption de ADC
+    }
+
+void regle(void)
+    {
+     if(step==step_pre)
+     step=0;
+    }
+	
+ISR(ADC_vect)                            //intruption de ADC
+    {
+	 if(bit_is_set(PINA,switch2))  
+	    {
+         TSteep=(T_DIFF/102)*(ADC/10)+T_MIN;           //pour chaque valeur de ADC on a un angle  
+         a=99-(ADCW/11); 
+	    }
+	 else
+        {
+	     step=ADC/10;
+	     regle();
+	     if(step)
+		 step_pre=step;
+		}
+	}
+	
+	
+void config_interface(void)
+    {
+	 
+     DDRB = 0xff;                     //declaration de port c comme sortie  
+     DDRA&=~(1u<<potentiometre);  //declaration de adc0 comme entrée de potentiometre
+	 DDRA&=~(1u<<switch1);        //declaration entrée pour l'interupteur de sens
+	 DDRA&=~(1u<<switch2);        //declaration entrée pour l'interupteur de sens
+	 DDRA&=~(1u<<switch3);        //entrée pour l'intruptur de choix d'utilisation vitesse/position
+	 
+	}
+	
+/*
+char nmb(char a)
+    {
+     switch(a)
+        {
+         case 0: a=0b01011111;
+         break;
+         case 1: a=0x06;
+         break;
+         case 2: a=0b00111011;
+         break;
+         case 3: a=0b00101111;
+         break;
+         case 4: a=0x66;
+         break;
+         case 5: a=0X6d;
+         break;
+         case 6: a=0x7d;
+         break;
+         case 7: a=0x07;
+         break;
+         case 8: a=0x7f;
+         break;
+         case 9: a=0X6f;
+         break;
+        }
+      return a;
+    }
+
+void cod(void)
+    {
+     b=a/10;
+     c=a-b*10;
+     b=nmb(b);
+     c=nmb(c);
+     c=c&0b01111111;
+     b=b|(1u<<7);
+
+    }
+*/
+char read_nomber(void)
+    {
+	 char data;
+	 char data1;
+	 char data2;
+	 char data3;
+	 data1=USARTReadChar()-61; 
+	 data2=USARTReadChar()-61;
+	 data3=USARTReadChar()-61;
+	 data=(data1*100)+(data2*10)+data3;
+	 USARTWrite_S_Char("ok");
+	 USART_newline();
+	 return data;
+	}
+
+	
+int main(void)
+    {   
+	 char vitesse;     
+	 char data;
+     USARTInit(25);    
+     config_interface();            //configuration des entrée et des sortie de ATMEGA16
+     config_adc();                  //configuration de ADC
+     config_timer();
+	 sei();
+     step_1();
+	 
+     while(1) 
+	    {  
+		 if(bit_is_clear(PINA,switch3))
+            {
+             USARTWrite_S_Char("hello controle de moteur pas a pas");
+			 USART_newline();
+			 if(bit_is_clear(PINA,switch2))
+			    { 
+				  USARTWrite_S_Char("S V P entré la vitesse :");
+				   vitesse=read_nomber();
+				   TSteep=(-38*vitesse)+10000;
+				   
+				}
+			 else
+                {
+				  USARTWrite_S_Char("S V P entré la position :");
+				  step=read_nomber();
+				  while(step)
+				    {
+					 //do nothing
+					}
+				  
+                }	
+ }
+        }
+    }
+

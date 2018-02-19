@@ -18,7 +18,7 @@ Prog S
 and more
 
 
-after building code into your broad control your system using bluetooth, wifi ...
+after building code into your board control your system using bluetooth, wifi ...
 
 All in one interface
 

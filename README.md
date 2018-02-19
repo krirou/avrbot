@@ -1,9 +1,6 @@
  #avrbot 
  
- based on avr gcc , avr libc, avrdude and other tools
-
-
-IDE for programmation & communication (bluetooth, TCP ,and serial port with configuration)
+IDE based on avr gcc , avr libc, avrdude and other tools for programmation & communication (bluetooth, TCP ,and serial port with configuration)
 
 Program with ( C, C++, assembler, avrbot language) your favorite programmer using avrbot:
 
@@ -25,11 +22,19 @@ after building code into your broad control your system using bluetooth, wifi ..
 
 All in one interface
 
+WHY AVRBOT?
+
+Update gcc with most of command to optimize compilation
+
+Add more interface (bluetooth, RS323, usb ...)  to test communicatin with connected object. 
+
 
 #TUTORIAL
 
-Download setup and  start installation 
+Download setup and  start installation
+
 Lunch IDE and go to: 
+
  https://www.youtube.com/watch?v=purV5EecMjQ
 
 to know how to use the IDE to write and compile c/c++ project for  microcontroler 

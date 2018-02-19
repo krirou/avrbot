@@ -1,4 +1,4 @@
- #avrbot 
+ #avrbot (version 0.1 2013)
  
 IDE based on avr gcc , avr libc, avrdude and other tools for programmation & communication (bluetooth, TCP ,and serial port with configuration)
 
@@ -35,7 +35,7 @@ Download setup and  start installation
 
 Lunch IDE and go to: 
 
- https://www.youtube.com/watch?v=purV5EecMjQ
+ https://www.youtube.com/watch?v=purV5EecMjQ  (version 0.1 2013)
 
 to know how to use the IDE to write and compile c/c++ project for  microcontroler 
 

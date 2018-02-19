@@ -33,7 +33,7 @@ Add more interface (bluetooth, RS323, usb ...)  to test communicatin with connec
 
 Download setup and  start installation
 
-Lunch IDE and go to: 
+Open IDE and go to: 
 
  https://www.youtube.com/watch?v=purV5EecMjQ  (version 0.1 2013)
 

@@ -1,4 +1,4 @@
- #avrbot (version 0.1 2013)
+ #avrbot 2013
  
 IDE based on avr gcc , avr libc, avrdude and other tools for programmation & communication (bluetooth, TCP ,and serial port with configuration)
 
@@ -33,11 +33,9 @@ Add more interface (bluetooth, RS323, usb ...)  to test communicatin with connec
 
 Download setup and  start installation
 
-Open IDE and go to: 
+Open IDE: 
 
- https://www.youtube.com/watch?v=purV5EecMjQ  (version 0.1 2013)
-
-to know how to use the IDE to write and compile c/c++ project for  microcontroler 
+Write and compile c/c++ project for  microcontroler 
 
 Use IDE to flash your device 
 
